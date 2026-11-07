@@ -6,9 +6,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_library(template src/template.cpp)
-target_include_directories(template PUBLIC include)
+target_include_directories(template PUBLIC src)
 
 enable_testing()
-add_executable(template_test tests/test_template.cpp)
+add_executable(template_test src/tests/test_template.cpp)
 target_link_libraries(template_test PRIVATE template)
 add_test(NAME template_test COMMAND template_test)
