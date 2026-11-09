@@ -1,0 +1,18 @@
+{
+  "rank": "1.1",
+  "title": "Add CMake install and export",
+  "context": "The package cannot be consumed cleanly by another CMake project.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Add install rules and an export target.",
+    "expected_outcome": "A consumer can find_package the library.",
+    "acceptance_criteria": [
+      "Install target exists",
+      "Export config is generated"
+    ]
+  },
+  "attempts": []
+}

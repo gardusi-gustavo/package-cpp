@@ -1,0 +1,18 @@
+{
+  "rank": "1.2",
+  "title": "Add the algorithm import script",
+  "context": "The problem-solving algorithms are still in an archived repo.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Add a repeatable import script and mapping.",
+    "expected_outcome": "The archive can be imported without manual copying.",
+    "acceptance_criteria": [
+      "Script is idempotent",
+      "Manifest maps every source directory"
+    ]
+  },
+  "attempts": []
+}

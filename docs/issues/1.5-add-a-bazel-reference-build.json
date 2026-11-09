@@ -1,0 +1,18 @@
+{
+  "rank": "1.5",
+  "title": "Add a Bazel reference build",
+  "context": "CMake is canonical but Bazel is a documented alternative.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Add a minimal BUILD.bazel reference.",
+    "expected_outcome": "The same library builds with Bazel.",
+    "acceptance_criteria": [
+      "Bazel file is documented",
+      "CI keeps CMake as required"
+    ]
+  },
+  "attempts": []
+}

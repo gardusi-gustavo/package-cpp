@@ -1,0 +1,18 @@
+{
+  "rank": "1.3",
+  "title": "Add modular reference test targets",
+  "context": "Reference algorithms must compile and run independently.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Generate one executable and test per reference file.",
+    "expected_outcome": "One broken algorithm does not block the others.",
+    "acceptance_criteria": [
+      "Targets use unique names",
+      "ctest runs every reference test"
+    ]
+  },
+  "attempts": []
+}

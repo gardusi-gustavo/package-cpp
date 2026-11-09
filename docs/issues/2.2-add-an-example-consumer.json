@@ -1,0 +1,18 @@
+{
+  "rank": "2.2",
+  "title": "Add an example consumer",
+  "context": "There is no proof that an external CMake project can consume the package.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Add examples/cmake-app.",
+    "expected_outcome": "The example builds against the local package.",
+    "acceptance_criteria": [
+      "Example is excluded from publishing",
+      "Example CI is documented"
+    ]
+  },
+  "attempts": []
+}

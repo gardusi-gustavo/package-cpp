@@ -1,0 +1,18 @@
+{
+  "rank": "1.6",
+  "title": "Publish a release artifact",
+  "context": "The package has no tagged release artifact.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Build a tag-triggered archive and SHA256SUMS.",
+    "expected_outcome": "A v* tag produces a release artifact.",
+    "acceptance_criteria": [
+      "Archive verifies",
+      "Checksums are published"
+    ]
+  },
+  "attempts": []
+}

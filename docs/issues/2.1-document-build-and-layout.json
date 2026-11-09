@@ -1,0 +1,18 @@
+{
+  "rank": "2.1",
+  "title": "Document build and layout",
+  "context": "The package layout will grow after the algorithm import.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Document src/, docs/, and examples/.",
+    "expected_outcome": "A new contributor can build and test in one page.",
+    "acceptance_criteria": [
+      "README points at the docs",
+      "Build and test commands are current"
+    ]
+  },
+  "attempts": []
+}

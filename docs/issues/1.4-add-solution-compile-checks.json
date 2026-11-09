@@ -1,0 +1,18 @@
+{
+  "rank": "1.4",
+  "title": "Add solution compile checks",
+  "context": "Solution files are mostly function-only and untested.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Compile every solution as an object target.",
+    "expected_outcome": "Every solution compiles in CI.",
+    "acceptance_criteria": [
+      "Object targets are generated",
+      "CI reports each failure"
+    ]
+  },
+  "attempts": []
+}
