@@ -133,6 +133,16 @@
           ".yaml",
           ".md"
         ]
+      },
+      "infra/scripts/": {
+        "allow_extensions": [
+          ".sh"
+        ]
+      },
+      "infra/docker/": {
+        "allow_globs": [
+          "*.dockerfile"
+        ]
       }
     },
     "forbid": [
