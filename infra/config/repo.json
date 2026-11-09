@@ -1,12 +1,13 @@
 {
   "schema": 1,
-  "name": "cpp",
-  "organization": "templates",
+  "name": "package-cpp",
+  "organization": "gardusi-gustavo",
   "layer": 2,
   "kind": "library",
   "visibility": "public",
   "platforms": [
-    "gitea"
+    "gitea",
+    "github"
   ],
   "features": {
     "ci": true,
@@ -36,7 +37,7 @@
   "dependencies": {
     "templates/yml": "v0.2.0",
     "templates/json": "v0.2.1",
-    "templates/sh": "v0.6.2",
+    "templates/sh": "v0.6.3",
     "templates/md": "v0.3.1",
     "templates/git": "v0.1.1"
   },
@@ -111,6 +112,27 @@
         "allow_names": [
           "pull_request_template.md"
         ]
+      },
+      ".github/": {
+        "allow_globs": [
+          "*"
+        ],
+        "allow_names": [
+          "CODEOWNERS"
+        ]
+      },
+      ".github/workflows/": {
+        "allow_extensions": [
+          ".yml",
+          ".yaml"
+        ]
+      },
+      ".github/ISSUE_TEMPLATE/": {
+        "allow_extensions": [
+          ".yml",
+          ".yaml",
+          ".md"
+        ]
       }
     },
     "forbid": [
@@ -122,16 +144,13 @@
           "^AGENTS\\.md$",
           "^docs/",
           "^\\.gitea/",
-          "^infra/templates/"
+          "^infra/templates/",
+          "^\\.github/"
         ]
       },
       {
         "regex": "^infra/data/",
         "reason": "infra/data is retired; use src/data"
-      },
-      {
-        "regex": "^\\.github/",
-        "reason": "GitHub is not a source"
       },
       {
         "regex": "^\\.gitlab-ci\\.yml$",

@@ -1,6 +1,6 @@
-# cpp
+# package-cpp
 
-C++ package template with a CMake build and a minimal test.
+C++20 package with a CMake build and a minimal test.
 
 ## Build
 
